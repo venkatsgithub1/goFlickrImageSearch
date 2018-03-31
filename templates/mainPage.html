@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <!--TODO: add meta tag.-->
+        <title>Image Search</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container alert alert-light">
+            <div class="alert alert-success">
+                <h1>Image Search</h1>
+                <form method="POST" action="/image">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="tagData" placeholder="enter search words here, separated by commas"/>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Search"/>
+                </form>
+            <!--/div>
+            <div class="card alert alert-success"-->
+                <!--div class="card-header alert alert-danger">Note</div-->
+                <!--div class="card-body"-->
+                    <blockquote class="alert alert-warning alert-dismissible fade show">
+                        <p class="mb-0">The data is fetched using Flickr API. Only public photos are shown.</p>
+                        <footer class="blockquote-footer">All contents are copyrighted to their rightful owners.</footer>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </blockquote>
+                <!--/div-->
+            </div>
+        </div>
+    </body>
+</html>
